@@ -45,10 +45,11 @@ export default class Detail extends Component {
                         back to products
                       </ButtonContainer>
                     </Link>
-                    <ButtonContainer disable={inCart?true:false} onClick={() => {
-                      value.addToCart(id)
+                    <ButtonContainer cart disable={inCart?true:false} onClick={() => {
+                      value.addToCart(id);
+                      value.openModal(id); 
                     }}>
-                      {inCart?"inCart":"add to cart"}
+                      {inCart ? "inCart" : "add to cart"}
                     </ButtonContainer>
                   </div>
                 </div>
