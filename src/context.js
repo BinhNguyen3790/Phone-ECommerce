@@ -10,7 +10,7 @@ class ProductProvider extends Component {
     products: [],
     detailProduct: detailProduct,
     cart: storeProducts,
-    modalOpen: false,
+    modalOpen: false, 
     modalProduct: detailProduct,
     cartSubTotal: 0,
     cartTax: 0,
@@ -19,7 +19,7 @@ class ProductProvider extends Component {
   componentDidMount() {
     this.setProducts();
   }
-  
+   
   setProducts = () => {
     let tempProducts = [];
     storeProducts.forEach(item => {
